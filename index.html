@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Buscar Pokemon</title>
+</head>
+<body>
+    <h1>Busca tu Pokemon</h1>
+
+    <form id="pokemonForm">
+        <input type="text" id="pokemonInput" placeholder="Escribe el nombre de tu Pokemon" required/>
+        <button type="submit">Buscar</button>
+    </form>
+
+    <section id="pokemonResultado" style="display: none;">
+        <h2 id="pokeNombre"></h2>
+        <img id="pokeImg" src="" alt="imagen del pokemon"/>
+        <button id="saveButton">Guardar como favorito</button>
+    </section>
+
+    <section id="favoritos">
+        <h2>MIS POKEMONES FAVORITOS</h2>
+        <ul id="listaFavoritos">
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
